@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+    color:black;
+}
+button{
+    font-size: 1.3em;
+    width:150px;
+    height:40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+}
+.box{
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+    border: none;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    
+}
+font{
+    font-family: "Sofia",sans-serif;
+    font-size: 3em;
+    color:purple;
+}
+.box:hover{
+    width:400px;
+    
+}
+.circle{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+@media (min-width:1000px) and (max-width:1600px){
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .flex1,.flex2,.flex3{
+        width:200px;
+        height:200px;
+        margin: 20px;
+        background-color: green;
+    
+    }
+}
+@media (min-width:700px) and (max-width:1000px){
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex1,.flex2,.flex3{
+        width:300px;
+        height: 300px;
+        margin: 20px;
+        background-color: green;
+    
+    }
+}
+@media (min-width:300px) and (max-width:700px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex1,.flex2,.flex3{
+        width:200px;
+        height:200px;
+        margin: 20px;
+        background-color: green;
+    
+    }
+}
+.animation{
+    width:100px;
+    height: 100px;
+    margin-left: 100px;
+    animation: move infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    
+}
+@keyframes move {
+    0%{
+        background-color: purple;
+        transform: translateX(0px) skewX(15deg);
+    }
+    50%{
+        background-color: aquamarine;
+        transform: translateX(500px) skewX(-15deg);
+    }
+    100%{
+        background-color: green;
+        transform: translateX(0px) skewX(15deg);
+    }
+}
